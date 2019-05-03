@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>among</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin:0px;
+            padding:10px;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top:0;
+            width:100%;
+            height : 4%;
+            box-shadow : 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+            z-index : 1000;
+        }
+
+        li{
+            display: inline;
+            margin : 0 0 0 90px;
+        }
+        li a{
+            display: inline-block;
+            color:black;
+            text-align: center;
+            text-decoration: none;
+        }
+        #free:hover{
+            background-color: sandybrown;
+        }
+        .rright{
+            position:fixed;
+            right : 320px;
+            top : 13px;
+
+
+        }
+        .right-align{
+            font-size : 17px;
+            font-weight : 700;
+            position:fixed;
+            right : 175px;
+            background-color : coral;
+        }
+        #free{
+            padding : 3px;
+            color : white;
+        }
+        .among{
+            padding : 0 0 0 25px;
+            height:auto;
+            width : 120px;
+        }
+        .left{
+            padding : 40px;
+        }
+        .beta{
+            height : auto;
+            width : 40px;
+        }
+        .paragraph{
+            padding : 0 0 0 180px;
+            color : white;
+            margin : 50px 0 0 0;
+            background-color : #4d4d4c;
+            background-image: url("1.svg");
+            background-repeat : no-repeat;
+            background-position : 80% 100%;
+            height : 200px;
+        }
+        #grow{
+            padding : 20px 0 0 0;
+            font-weight : bold;
+        }
+        #fun{
+            font-size : 22px;
+            font-weight : normal;
+        }
+        .aha{
+            margin : 100px 0 0 0;
+            padding : 0 0 0 200px;
+            color : #ff8b8b;
+        }
+        #ne{
+            margin :10px 200px;
+            border : solid black;
+            border-width : 0.5px;
+        }
+        #lin{
+            margin :150px 180px 25px 200px;
+            border : solid black;
+            border-width : 0.5px;
+        }
+        .box{
+            display : inline-block;
+            margin : 0 0 0 200px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            position : relative;
+            top : 0;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px ;
+            background-image : url("자동물뿌리개.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+        }
+        .boxs{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("해와 함께.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .boxss{
+             display : inline-block;
+             margin : 20px 0 0 30px;
+             width : 180px;
+             height : 280px;
+             padding : 0 0 0 20px;
+             background-color: transparent;
+             border-radius : 5px;
+             box-shadow : 0 0 8px -5px;
+             background-image : url("학점계산기_썸네일AM-D09-21.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+             background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+             background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+             background-repeat : no-repeat;
+
+         }
+        .boxsss{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("폭탄제거.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .boxssss{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("행맨_썸네일AM-D09-19.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        span {
+            position : relative;
+            top : 140px;
+        }
+
+        #project{
+            font-size : 23px;
+            font-weight : 800;
+            position : relative;
+            top : 0px;
+        }
+        #make{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #relay{
+            display : inline-block;
+            width : 50px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #water{
+            display : inline-block;
+            width : 90px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #sun {
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 165px;
+        }
+
+        #morning{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #bu{
+            display : inline-block;
+            width : 40px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #sensor{
+            display : inline-block;
+            width : 60px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #gold{
+            font-size : 10px;
+            color : darkgrey;
+            position : relative;
+            top : 165px;
+        }
+        #calc{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #char{
+            display : inline-block;
+            width : 50px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #exception{
+            display : inline-block;
+            width : 60px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #univ{
+            font-size : 10px;
+            color : darkgrey;
+            position : relative;
+            top : 165px;
+        }
+        #bomb{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #game{
+            display : inline-block;
+            width : 40px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #bell{
+            display : inline-block;
+            width : 45px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #friend{
+            font-size : 10px;
+            color : darkgrey;
+            position : relative;
+            top : 165px;
+        }
+        #man{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #gam{
+            display : inline-block;
+            width : 40px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #ch{
+            display : inline-block;
+            width : 50px;
+            height : 16px;
+            font-size : 10px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #word{
+            font-size : 10px;
+            color : darkgrey;
+            position : relative;
+            top : 165px;
+        }
+        #shock{
+            color : royalblue;
+            font-size : 23px;
+            font-weight : 800;
+            position : relative;
+            top : 140px;
+            padding : 0 0 0 200px;
+        }
+        #mo{
+            text-decoration: none;
+            color : black;
+            font-size : 18px;
+            font-weight : 800;
+            padding : 0 0 0 850px;
+        }
+        .square{
+            display : inline-block;
+            margin : 0 0 0 200px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            position : relative;
+            top : 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("voice-recog2x.png"), url("4.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+        }
+        .squares{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("python-chess2x.png"), url("4.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .squaress{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("썸네일AM_D10_14.png "), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .squaresss{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("마녀_썸네일AM-D09-35.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .squaressss{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("썸네일AM_D10_21.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+        }
+        #sound{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #sen{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 145px;
+            color : darkgray;
+        }
+        #key{
+            display : inline-block;
+            width : 60px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 145px;
+            color : darkgray;
+        }
+        #noisy {
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 140px;
+        }
+        #python{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #ga{
+            display : inline-block;
+            width :30px;
+            height : 14px;
+            font-size : 8px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #chess{
+            display : inline-block;
+            width : 30px;
+            height : 14px;
+            font-size : 8px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #java{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            margin : 0 0 0 2px;
+            font-size : 8px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #justice {
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #catch{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #app{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #g{
+            display : inline-block;
+            width : 30px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #simple{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #witch{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #list{
+            display : inline-block;
+            width :40px;
+            height : 14px;
+            font-size : 8px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #ord{
+            display : inline-block;
+            width : 30px;
+            height : 14px;
+            font-size : 8px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #message{
+            display : inline-block;
+            width : 40px;
+            margin : 0 0 0 2px;
+            height : 14px;
+            font-size : 8px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #order{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #calculator{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #king{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #android{
+            display : inline-block;
+            width : 60px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #fri{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #dduck{
+            color : mediumaquamarine;
+            font-size : 23px;
+            font-weight : 800;
+            position : relative;
+            top : 140px;
+            padding : 0 0 0 200px;
+        }
+        #moo{
+            text-decoration: none;
+            color : black;
+            font-size : 18px;
+            font-weight : 800;
+            padding : 0 0 0 785px;
+        }
+        #line{
+            margin :150px 180px 25px 200px;
+            border : solid black;
+            border-width : 0.5px;
+        }
+        .nemo{
+            display : inline-block;
+            margin : 0 0 0 200px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            position : relative;
+            top : 0;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("미세먼지.png"), url("4.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+        }
+        .nemos{
+            display : inline-block;
+            position : relative;
+            top :20px;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("voice-recog2x.png"), url("4.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .nemoss{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("준비프로젝트.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .nemosss{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("led.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .nemossss{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("전광판.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+        }
+        #dust{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #sens{
+            display : inline-block;
+            width : 60px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #rel{
+            display : inline-block;
+            width : 40px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #sky{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #soun{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #se{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 145px;
+            color : darkgray;
+        }
+        #ke{
+            display : inline-block;
+            width : 60px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 145px;
+            color : darkgray;
+        }
+        #nois {
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 145px;
+        }
+        #pro{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #install{
+            display : inline-block;
+            width : 70px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #setting{
+            display : inline-block;
+            width : 70px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #adoino{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #led{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #tm{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #gg{
+            display : inline-block;
+            width : 60px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #module{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #own{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #dot{
+            display : inline-block;
+            width : 80px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #night{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #basic{
+            color : darkorange;
+            font-size : 23px;
+            font-weight : 800;
+            position : relative;
+            top : 140px;
+            padding : 0 0 0 200px;
+        }
+        #mooo{
+            text-decoration: none;
+            color : black;
+            font-size : 18px;
+            font-weight : 800;
+            padding : 0 0 0 945px;
+        }
+        #linee{
+            margin :150px 180px 25px 200px;
+            border : solid black;
+            border-width : 0.5px;
+        }
+        .box1{
+            display : inline-block;
+            margin : 0 0 0 200px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            position : relative;
+            top : 0;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("미세먼지.png"), url("4.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+        }
+        .box2{
+            display : inline-block;
+            position : relative;
+            top :20px;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("voice-recog2x.png"), url("4.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .box3{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("스크래치.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .box4{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("앱인벤터.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .box5{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("준비프로젝트.png"), url("4.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+        }
+        #dust1{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #sens1{
+            display : inline-block;
+            width : 60px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #rel1{
+            display : inline-block;
+            width : 40px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #sky1{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #soun1{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #se1{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 145px;
+            color : darkgray;
+        }
+        #ke1{
+            display : inline-block;
+            width : 60px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 145px;
+            color : darkgray;
+        }
+        #nois1{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 145px;
+        }
+        #nois2{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 145px;
+        }
+        #introduce{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #tutorial{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #start{
+            display : inline-block;
+            width : 40px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #first{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #intro{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #inventor{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+
+        #use{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #many{
+            color : royalblue;
+            font-size : 23px;
+            font-weight : 800;
+            position : relative;
+            top : 140px;
+            padding : 0 0 0 200px;
+        }
+        #pro1{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #install1{
+            display : inline-block;
+            width : 70px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #setting1{
+            display : inline-block;
+            width : 70px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #adoino1{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+
+        #moooo{
+            text-decoration: none;
+            color : black;
+            font-size : 18px;
+            font-weight : 800;
+            padding : 0 0 0 790px;
+        }
+        #lineee{
+            margin :150px 180px 25px 200px;
+            border : solid black;
+            border-width : 0.5px;
+        }
+        #dust2{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #sens2{
+            display : inline-block;
+            width : 60px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #rel2{
+            display : inline-block;
+            width : 40px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 160px;
+            color : darkgray;
+        }
+        #soun2{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #se2{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 145px;
+            color : darkgray;
+        }
+        #ke2{
+            display : inline-block;
+            width : 60px;
+            height : 14px;
+            font-size : 7px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 145px;
+            color : darkgray;
+        }
+        #python1{
+            font-size : 15px;
+            font-weight : 800;
+        }
+        #ga1{
+            display : inline-block;
+            width :30px;
+            height : 14px;
+            font-size : 8px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #chess1{
+            display : inline-block;
+            width : 30px;
+            height : 14px;
+            font-size : 8px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #java1{
+            display : inline-block;
+            width : 50px;
+            height : 14px;
+            margin : 0 0 0 2px;
+            font-size : 8px;
+            text-align : center;
+            border-radius : 10px 10px 10px 10px;
+            background-color : gainsboro;
+            position : relative;
+            top : 165px;
+            color : darkgray;
+        }
+        #justice1 {
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        #sky2{
+            font-size: 10px;
+            color: darkgrey;
+            position: relative;
+            top: 160px;
+        }
+        .nemo1{
+            display : inline-block;
+            margin : 0 0 0 200px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            position : relative;
+            top : 0;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("미세먼지.png"), url("4.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+        }
+        .nemo2{
+            display : inline-block;
+            position : relative;
+            top :20px;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("voice-recog2x.png"), url("4.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+
+        }
+        .nemo3{
+            display : inline-block;
+            margin : 20px 0 0 30px;
+            width : 180px;
+            height : 280px;
+            padding : 0 0 0 20px;
+            background-color: transparent;
+            border-radius : 5px;
+            box-shadow : 0 0 8px -5px;
+            background-image : url("python-chess2x.png"), url("4.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("6.svg"), url("5.svg");
+            background-position: top, 20px 95%, 75px 95%, 95px 95%, 115px 95%, 135px 95%, 155px 95%;
+            background-size : 200px 125px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px, 18px 18px;
+            background-repeat : no-repeat;
+        }
+        #foot{
+            margin : 90px 0 0 0;
+            border : solid lightgrey;
+            border-width : 0.5px;
+
+        }
+        .finish{
+            padding : 5px 0 30px 450px;
+            color : gray;
+            font-size : 12px;
+        }
+        #finish1{
+            color : gray;
+            border : 1px;
+            position : relative;
+            top : 0;
+        }
+        #fin{
+
+            height : auto;
+            width : 150px;
+            position : relative;
+            left : 220px;
+            top : 45px;
+        }
+        #instagram{
+            position : relative;
+            left : 1065px;
+            top : 30px;
+        }
+        #facebook{
+            position : relative;
+            left : 1080px;
+            top : 30px;
+
+        }
+        #blog{
+            position : relative;
+            left : 1095px;
+            top : 30px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<ul>
+    <li class = "left"><a href><img class = "among" src ="3.svg" alt = "아몽"><img class = "beta" src = "2.svg" alt = "베타"></a></li>
+    <li class = "rright"><a id = "log" href>로그인</a></li>
+    <li class = "right-align"><a id = "free" href>무료 회원가입</a></li>
+</ul>
+<div class = "paragraph">
+    <h1 id = "grow" >아몽은 여러분과 함께 성장합니다.</h1>
+    <h2 id = "fun">파이썬, 스크래치, 아두이노, 크롤링을 활용한 재미있는 프로젝트!</h2>
+</div>
+<p class ="aha">
+    <span id = "project" >새로운 프로젝트</span>
+<hr id = "ne">
+</p>
+
+<p class = "box">
+    <span id = "make">자동 물뿌리개 만들기</span><br>
+    <span id = "sun">화분에 물주는 걸 잊어 화분이 시...</span>
+    <span id = "relay">#릴레이</span> <span id = "water">#토양수분센서</span>
+</p>
+<p class = "boxs">
+    <span id = "morning">해와 함께 아침을</span><br>
+    <span id = "gold">황금같은 휴일, 혹시 늦은 시간까...</span>
+    <span id = "bu">#부저</span> <span id = "sensor">#조도센서</span>
+
+</p>
+<p class = "boxss">
+    <span id = "calc">학점계산기</span><br>
+    <span id = "univ">대학교에서는 성적을 A+~F까지...</span>
+    <span id = "char">#문자열</span> <span id = "exception">#예외처리</span>
+
+</p>
+<p class = "boxsss">
+    <span id = "bomb">폭탄을 제거해라!</span><br>
+    <span id = "friend">여러분들은 친구들과 내기를 해...</span>
+    <span id = "game">#게임</span> <span id = "bell">#부저</span>
+
+</p>
+<p class = "boxssss">
+    <span id = "man">파이썬으로 행맨 만들기</span><br>
+    <span id = "word">행맨은 영어 단어를 하나 정한 후...</span>
+    <span id = "gam">#게임</span> <span id = "ch">#문자열</span>
+</p>
+<p class = "ahaaha">
+    <span id = "shock">슥하고 게임 쇽 제작</span> <span id = "more"><a id = "mo" href>더보기></a></span>
+</p>
+<hr id = "lin">
+<p class = "square">
+    <span id = "sound">소리 지르면 점멸 써주는 아두이노</span><br>
+    <span id = "noisy">게임할 때 시끄러운 친구가 있나...</span>
+    <span id = "sen">#사운드센서</span> <span id = "key">#키보드제어</span>
+</p>
+<p class = "squares">
+    <span id = "python">파이썬으로 체스 만들기</span><br>
+    <span id = "justice">파이썬에 객체지향의 개념을 적...</span>
+    <span id = "ga">#게임</span> <span id = "chess">#체스</span><span id = "java">#객체지향</span>
+</p>
+<p class = "squaress">
+    <span id = "catch">두더지잡기</span><br>
+    <span id = "simple">앱인벤터를 이용해 간단하고 쉽...</span>
+    <span id = "app">#앱인벤터</span> <span id = "g">#게임</span>
+</p>
+<p class = "squaresss">
+    <span id = "witch">마녀의 순서</span><br>
+    <span id = "order">마녀의 순서는 마녀가 색깔 말한...</span>
+    <span id = "list">#리스트</span> <span id = "ord">#순서</span><span id = "message">#메시지</span>
+</p>
+<p class = "squaressss">
+    <span id = "calculator">생존점수 계산기 만들기</span><br>
+    <span id = "fri">친구들과 유희왕 게임을 할려고...</span>
+    <span id = "king">#유희왕</span> <span id = "android">#안드로이드</span>
+</p>
+
+<p>
+    <span id = "dduck">뚝딱 직접 만드는 프로젝트</span> <span><a id = "moo" href>더보기></a></span>
+</p>
+
+<hr id = "line">
+
+<p class = "nemo">
+    <span id = "dust">미세먼지 퇴치작전</span><br>
+    <span id = "sky">미세먼지 가득한 뿌연 하늘 여러...</span>
+    <span id = "sens">#미세먼지센서</span> <span id = "rel">#릴레이</span>
+</p>
+<p class = "nemos">
+    <span id = "soun">소리 지르면 점멸 써주는 아두이노</span><br>
+    <span id = "nois">게임할 때 시끄러운 친구가 있나...</span>
+    <span id = "se">#사운드센서</span> <span id = "ke">#키보드제어</span>
+</p>
+<p class = "nemoss">
+    <span id = "pro">준비프로젝트</span><br>
+    <span id = "adoino">아두이노를 설치하고 앞으로 사...</span>
+    <span id = "install">#아두이노설치</span> <span id = "setting">#아두이노설정</span>
+</p>
+<p class = "nemosss">
+    <span id = "led">LED를 꺼라!</span><br>
+    <span id = "module">led key디스플레이 모듈 8채널(...</span>
+    <span id = "tm">#tm1638</span> <span id = "gg">#게임</span>
+</p>
+<p class = "nemossss">
+    <span id = "own">나만의 전광판 만들기</span><br>
+    <span id = "night">도심의 밤 거리 한 번쯤은 번쩍...</span>
+    <span id = "dot">#도트매트릭스</span>
+</p>
+
+<p>
+    <span id = "basic">기초 다지기</span> <span ><a id = "mooo" href>더보기></a></span>
+</p>
+
+<hr id = "linee">
+<p class = "box1">
+    <span id = "dust1">미세먼지 퇴치작전</span><br>
+    <span id = "sky1">미세먼지 가득한 뿌연 하늘 여러...</span>
+    <span id = "sens1">#미세먼지센서</span> <span id = "rel1">#릴레이</span>
+</p>
+<p class = "box2">
+    <span id = "soun1">소리 지르면 점멸 써주는 아두이노</span><br>
+    <span id = "nois1">게임할 때 시끄러운 친구가 있나...</span>
+    <span id = "se1">#사운드센서</span> <span id = "ke1">#키보드제어</span>
+</p>
+<p class = "box3">
+    <span id = "introduce">스크래치소개</span><br>
+    <span id = "first">스크래치를 처음 써보는 사람들...</span>
+    <span id = "tutorial">#튜토리얼</span> <span id = "start">#시작</span>
+</p>
+<p class = "box4">
+    <span id = "intro">앱인벤터_소개</span><br>
+    <span id = "use">앱인벤터를 사용하기 위한 기본...</span>
+    <span id = "inventor">#앱인벤터</span>
+</p>
+<p class = "box5">
+    <span id = "pro1">준비프로젝트</span><br>
+    <span id = "adoino1">아두이노를 설치하고 앞으로 사...</span>
+    <span id = "install1">#아두이노설치</span> <span id = "setting1">#아두이노설정</span>
+</p>
+
+<p>
+    <span id = "many">많은 사람들이 만족했어요</span> <span ><a id = "moooo" href>더보기></a></span>
+</p>
+
+<hr id = "lineee">
+<p class = "nemo1">
+    <span id = "dust2">미세먼지 퇴치작전</span><br>
+    <span id = "sky2">미세먼지 가득한 뿌연 하늘 여러...</span>
+    <span id = "sens2">#미세먼지센서</span> <span id = "rel2">#릴레이</span>
+</p>
+<p class = "nemo2">
+    <span id = "soun2">소리 지르면 점멸 써주는 아두이노</span><br>
+    <span id = "nois2">게임할 때 시끄러운 친구가 있나...</span>
+    <span id = "se2">#사운드센서</span> <span id = "ke2">#키보드제어</span>
+</p>
+<p class = "nemo3">
+    <span id = "python1">파이썬으로 체스 만들기</span><br>
+    <span id = "justice1">파이썬에 객체지향의 개념을 적...</span>
+    <span id = "ga1">#게임</span> <span id = "chess1">#체스</span><span id = "java1">#객체지향</span>
+</p>
+<hr id = "foot">
+<img id = "fin" src ="amongs.svg" alt = "among">
+<img id = "instagram" src ="instagram.svg" alt="instagram">
+<img id = "facebook" src = "facebook.svg" alt = "facebook">
+<img id = "blog" src = "blog.svg" alt = "blog">
+<footer class = "finish">
+    상호: 아몽 - among 대표: 최진혁 개인정보보호책임자: 홍승의<br>
+    주소: 서울특별시 동대문구 장한로 180 4층 아몽<br>
+    사업자등록번호: 881 - 44 - 00397<br>
+    Email: contact@among.software<br><br>
+    <span id ="finish1">본 콘텐츠의 저작권은 콘텐츠 제공자 또는 아몽 - among에 있으며 이를 무단 이용하는 경우 저작권법
+        등에 따라 법적책임을 질 수 있습니다.</span>
+
+
+</footer>
+</body>
+</html>
